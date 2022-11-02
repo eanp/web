@@ -1,0 +1,97 @@
+.box{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+}
+.box:hover{
+    background-color: skyblue;
+}
+/* .box::after{
+    content:"box after";
+    background-color: cornflowerblue;
+}
+.box::before{
+    content:"box before";
+    background-color: cornflowerblue;
+} */
+.box-model{
+    height: 120px;
+    width: 120px;
+    background-color: salmon;
+}
+.box-child{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    /* margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px; */
+    margin: 20px 30px;
+    margin: 20px 30px 20px 30px;
+    /* border-width: 5px;
+    border-color: green;
+    border-style: solid; */
+    border: green 5px solid;
+}
+
+.box-wrapper{
+    display: flex;
+    background-color: aqua;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200px;
+    width:  600px;
+}
+.box1{
+    background-color: red;
+    height: 120px;
+    width: 50%;
+}
+.box2{
+    background-color: red;
+    height: 120px;
+    width: 120px;
+}
+.box3{
+    background-color: red;
+    height: 120px;
+    width: 120px;
+}
+.logo{
+    margin-right: 20px;
+    height: 40px;
+}
+.bg-ean{
+    background-color: salmon;
+}
+.text-ean{
+   color: salmon;
+}
+.btn-ean{
+    color: #fff;
+    background-color: salmon;
+    border-color: salmon;
+}
+
+@media only screen and (max-width: 600px) {
+    .input-wrap {
+    background-color: red;
+    width: 80%;
+}
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .input-wrap {
+        background-color: blue;
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .input-wrap {
+        background-color: green;
+        width: 30%;
+}
+}
